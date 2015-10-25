@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 9 ]> <html lang="ja" class="ie8"> <![endif]--> 
+<!--[if IE 9 ]> <html lang="ja" class="ie9"> <![endif]--> 
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="ja"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- ↓ページタイトル↓ -->
+<title>NGMS</title>
+
+<!-- ↓検索エンジン用↓ -->
+<meta name="Description" content="検索用文言">
+<meta name="Keywords" content="検索用キーワードカンマ（,）区切り">
+
+<link rel="stylesheet" href="common/js/colorbox/colorbox.css">
+<link rel="stylesheet" href="common/css/common.css">
+
+<script src="common/js/jquery.min.js"></script>
+<script src="common/js/colorbox/jquery.colorbox-min.js"></script>
+<script src="common/js/jquery.tile.min.js"></script>
+<script src="common/js/common.js"></script>
+
+<script>
+jQuery(function() {
+$('a[href$=".jpg"],a[href$=".gif"],a[href$=".png"],a[href$=".jpeg"]').colorbox();
+
+$(window).load(function() {
+ $("#wrapper > div").tile();
+ $(".img-list figure, .img-list div.img-wrapper").tile();
+});
+
+});
+</script>
+<!--[if lt IE 9]>
+<script src="common/js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+
+<body id="top">
+<noscript>
+<p id="noscript">このWebサイトはJavaScriptを使用しています。
+<!--[if lt IE 9]><br>
+Internet Explorer 8をお使いの方はJavaScriptをオンにしてご覧ください。
+<![endif]-->
+</p>
+</noscript>
+
+<div id="wrapper">
+
+<!-- ↓左サイドバーカラム↓ -->
+<div id="sidebar">
+<header>
+<!-- ↓サイトロゴ画像↓ -->
+<h1><a href="index.html"><img src="img/logo.png" width="185" height="185" alt="NGMStrings"></a></h1>
+</header>
+
+<!-- ↓ナビゲーション -->
+<nav>
+<ul>
+  <li class="here"><a href="index.html">トップページ</a></li>
+  <li><a>楽団紹介</a>
+  </li>
+  <li><a>過去の演奏会のレポート</a>
+	<li><a>団員募集</a>
+  </li>
+</ul>
+</nav>
+</div>
+
+<!-- ↓コンテンツカラム↓ -->
+<div id="mainContent">
+<main>
+<header>
+<!-- ↓サイト名↓ -->
+<h1>Nagoya GaMe Strings <small>ゲーム大好き</small></h1>
+<!-- ↓サイト名の背景画像↓ -->
+<img src="img/index01.png" width="1100" height="180" alt="">
+</header>
+
+<!-- ↓キャッチコピー↓ -->
+<p class="read-txt">名古屋初！弦楽器で描くゲームの世界♪</p>
+
+<section>
+<!-- ↓更新履歴↓ -->
+<div class="update">
+<!-- ↓見出し↓ -->
+<h3>更新履歴</h3>
+
+<!-- ↓更新履歴1↓ -->
+<article>
+<h4>サイト公開！</h4>
+<time>2015.04.25</time>
+<p>新サイトを公開しました！<br>
+これから宜しくお願いしますね♪</p>
+</article>
+</div>
+
+</section>
+</main>
+
+<footer>
+<!-- ↓リンクバナーここから↓ -->
+<aside>
+  <!-- ↓↓リンクバナー1↓↓ -->
+  <dl>
+    <dt>
+    <a href="https://twitter.com/ngm_strings" target="_blank">
+    <img src="common/img/twitter.png" width="40" height="40" alt="Twitter">
+    </a>
+    </dt>
+    <dd>Twitterやってます。<br>
+    ぜひフォローしてくださいね♪</dd>
+  </dl>
+</aside>
+<!-- ↑リンクバナーここまで↑ -->
+
+<!-- ↓コピーライト↓ --> 
+<small>c NGMStrings</small>
+</footer>
+
+</div>
+<!-- ↑コンテンツカラムここまで↑ -->
+
+<!-- ↓ページの上に戻るボタン↓ -->
+<p id="goto-pagetop"><a href="#top">このページの上に戻る</a></p>
+
+</div>
+</body>
+</html>
